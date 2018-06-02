@@ -1,0 +1,4 @@
+#! /bin/bash
+
+#elixir --detached -e "File.write! 'pid', :os.getpid" -S mix phoenix.server
+elixir -e "File.write! 'pid', :os.getpid" -S mix phoenix.server
